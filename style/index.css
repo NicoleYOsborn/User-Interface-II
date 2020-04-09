@@ -1,55 +1,138 @@
-
-html, body, div, span, applet, object, iframe,  
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
-a, abbr, acronym, address, big, cite, code,  
-del, dfn, em, img, ins, kbd, q, s, samp,  
-small, strike, strong, sub, sup, tt, var,  
-b, u, i, center,  
-dl, dt, dd, ol, ul, li,  
-fieldset, form, label, legend,  
-table, caption, tbody, tfoot, thead, tr, th, td,  
-article, aside, canvas, details, embed,  
-figure, figcaption, footer, header, hgroup,  
-menu, nav, output, ruby, section, summary,  
-time, mark, audio, video {  
-margin: 0;  
-padding: 0;  
-/* border: 0;   */
-font-size: 100%;  
-/* font: inherit;   */
-vertical-align: baseline;  
-box-sizing: border-box;
+/* Reset code */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    /* border: 0;   */
+    font-size: 100%;
+    /* font: inherit;   */
+    vertical-align: baseline;
+    box-sizing: border-box;
 }
-html{
+
+/* set up styling */
+html {
     font-size: 62.5%;
 }
 
-h1{
-    font-family: 'Lobster', cursive;
-    font-size: 4.8rem;
-    color: #C63995;
-}
-
-
-*{
+* {
     /* border: 1px solid white; */
     /* border: 1px solid grey; */
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
 }
+.hide-element {
+    border: 0;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
 
-header{
+/* Header styling */
+
+header {
     background: #ACDAE8;
     padding: 2%;
 }
 
-nav{
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 4.8rem;
+    color: #C63995;
+}
+
+nav {
     display: flex;
     list-style: none;
     width: 40%;
-    
+
 }
-.navLinks{
+
+.navLinks {
     width: 25%;
     text-align: center;
     background: white;
@@ -58,27 +141,28 @@ nav{
     font-size: 1.6rem;
 }
 
-
-
-.navLinks:hover{
+.navLinks:hover {
     background: #C63995;
     color: white;
 }
 
-#main{
+/* Main section styling */
+#main {
     padding: 2% 1%;
 }
 
-#aboutSection{
+/* About section styling */
+
+#aboutSection {
     display: flex;
 }
 
-#profilePhoto{
+#profilePhoto {
     width: 50%;
     height: auto;
 }
 
-#aboutDetails{
+#aboutDetails {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -87,15 +171,16 @@ nav{
     font-size: 1.6rem;
 }
 
-#aboutDetails p{
+#aboutDetails p {
     margin-top: 2%;
 }
 
-h2{
+h2 {
     font-size: 3rem;
 }
 
-button{
+/* button styling */
+button {
     background-color: #C63995;
     border: none;
     color: white;
@@ -110,24 +195,18 @@ button{
     border: 1px solid #C63995;
 }
 
-button:hover{
+button:hover {
     background-color: white;
     border: 1px solid #C63995;
     color: #C63995;
 }
 
-footer{
-    background: #ACDAE8;
-    padding: 2%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-h3{
-    font-size: 20px;
-}
+/* Project Section */
 
 #projectsSection {
     display: flex;
@@ -141,47 +220,62 @@ h3{
     height: 350px;
     margin-top: 2%;
     padding: 2%;
-    
+
 }
 
-.project p{
+.project h4 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
-.projectPic{
-    
+
+.projectPic {
+
     width: 100%;
     height: 40vmin;
     object-fit: cover;
     border: 1px solid black;
 }
-a{
-    text-decoration: none;
-    color: inherit;
+
+/* footer styling */
+
+footer {
+    background: #ACDAE8;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+h3 {
+    font-size: 2rem;
 }
 
 /* Media queries */
 
 /* Tablet media query */
-@media(max-width:800px){
-nav{
-    width: 50%;
-}
-#aboutSection {
-    flex-direction: column;
-    align-items: center;
-}
-#aboutSection div{
-    width: 90%;
-}
+@media(max-width:800px) {
+    nav {
+        width: 50%;
+    }
+
+    #aboutSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #aboutSection div {
+        width: 90%;
+    }
 }
 
 /* Mobile media query */
-@media(max-width:500px){
-nav{
-    width:90%;
-}
-.projectPic{
-    height: 62vmin;
-}
+@media(max-width:500px) {
+    nav {
+        width: 90%;
+    }
+
+    .projectPic {
+        height: 62vmin;
+    }
 }
