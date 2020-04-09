@@ -4,8 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&display=swap');
+        </style> 
+     <link rel="stylesheet" href="style/index.css">   
 </head>
 <body>
+    <header>
+        <h1>Nicole Osborn</h1>
+        <nav>
+            <ul>
+                <a href="/"><li>Home</li></a>
+                <a href="about.html"><li>About</li></a>
+                <a href="contact.html"><li>Contacts</li></a>
+                <a href="projects.html"><li>Projects</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- This is the about section -->
+    <div id="main">
+    <section id="aboutSection">
+        <img  id="profilePhoto" src="style/Images/myAvatar.png" alt="Avatar of brown haired woman">
+        <div id="aboutDetails">
+            <h2>Nicole Osborn</h2>
+            <button onclick="window.location.href='projects.html'">My Projects</button>
+            <p>I am a lifelong learner fascinated with understanding people. I received my Bachelor of Arts in Anthropology (the study of people!) in 2002, and a Master of Science in Psychology in 2009. Although I never worked in those fields specifically, my thirst for information is ongoing as I am an avid consumer of science and psychology articles and podcasts.</p> 
+            <p>I discovered UX Design as a career possibility in 2019 and I dove right in! I realize now that in every job I have ever had, I have received the most joy and satisfaction from finding and solving problems for people. As a UX Designer, I use research, data, and current knowledge of human psychology to solve problems and provide great experiences. </p>
+        
+        </div>
+    </section>
+
+    <!-- This is the projects section -->
+    <section id="projectsSection">
+        <div class="project" id="Project1">
+            <img class="projectPic" src="/style/Images/Quest.png" alt="Image of a social networking app">
+            <p>Quest for the Best</p>
+        </div>
+        <div class="project" id="Project2">
+            <img class="projectPic" src="style/Images/LambdaMobile.png" alt="Image of a mobile interface for Lambda training kit">
+            <p>Lambda Mobile</p>
+        </div>
+        <div class="project" id="Project3">
+            <img class="projectPic" src="style/Images/How-To.png" alt="Image of a web app for creating how-to guides">
+            <p>How-To</p>
+        </div>
+        <div class="project" id="Project4">
+            <img class="projectPic" src="style/Images/Foodreau.png" alt="Image of a recipe web app">
+            <p>Foodreau</p>
+        </div>
+        <div class="project" id="Project5">
+            <img class="projectPic" src="style/Images/Pizza.jpg" alt="Image of tasty pizza.">
+            <p>I like Pizza</p>
+        </div>
+        <div class="project" id="Project6">
+            <img class="projectPic" src="style/Images/cinema.jpg" alt="Image of a cinema sign that reads &quot;The World is Temporarily Closed&quot;">
+            <p>I like movies</p>
+        </div>
+        <div class="project" id="Project7">
+            <img class="projectPic" src="style/Images/Molly.jpg" alt="Image of an adorable tortoise-shell cat">
+            <p>I like my cat</p>
+        </div>
+        <div class="project" id="Project8">
+            <img class="projectPic" src="style/Images/wine.jpg" alt="Image of a bartender pouring glasses of wine">
+            <p>I like wine</p>
+        </div>
+    </section>
+</div>
+    <!-- This is the footer section -->
+    <footer>
+        <h3>Like what you see?</h3>
+        <button><a href="contact.html"> Contact Me</a></button>
+    </footer>
     
 </body>
 </html>
