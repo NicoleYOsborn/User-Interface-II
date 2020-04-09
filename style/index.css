@@ -148,7 +148,7 @@ nav {
 
 /* Main section styling */
 #main {
-    padding: 2% 1%;
+    padding: 2% 2%;
 }
 
 /* About section styling */
@@ -277,5 +277,33 @@ h3 {
 
     .projectPic {
         height: 62vmin;
+    }
+}
+
+/* iPhone media query */
+@media(max-width: 375px){
+    .project{
+        width: 300px;
+        height: 300px;
+    }
+    button{
+        width: 300px;
+    }
+}
+
+/* Laptop media query */
+@media(max-width: 1366px){
+    #profilePhoto{
+    width: 40%;
+    }
+}
+
+/* Widescreen media query */
+@media(min-width: 1900px){
+    #profilePhoto{
+        width: 30%;
+        }
+    .projectPic{
+        height: 25vmin;
     }
 }
