@@ -18,18 +18,22 @@ padding: 0;
 font-size: 100%;  
 /* font: inherit;   */
 vertical-align: baseline;  
+box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
 }
 
 h1{
     font-family: 'Lobster', cursive;
-    font-size: 48px;
+    font-size: 4.8rem;
     color: #C63995;
 }
 
 
 *{
     /* border: 1px solid white; */
-    /* border: 1px solid grey; */
+    border: 1px solid grey;
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
     /* box-sizing: border-box; */
@@ -40,22 +44,24 @@ header{
     padding: 2%;
 }
 
-ul{
+nav{
     display: flex;
     list-style: none;
+    width: 40%;
     
 }
-
-li{
-    height: 20px;
-    width: 100px;
+.navLinks{
+    width: 25%;
     text-align: center;
     background: white;
     border: 1px solid #C63995;
-    padding: 15px 20px;
+    padding: 2% 0;
+    font-size: 1.6rem;
 }
 
-li:hover{
+
+
+.navLinks:hover{
     background: #C63995;
     color: white;
 }
@@ -70,6 +76,7 @@ li:hover{
 
 #profilePhoto{
     width: 50%;
+    height: auto;
 }
 
 #aboutDetails{
@@ -77,15 +84,16 @@ li:hover{
     flex-direction: column;
     justify-content: center;
     width: 50%;
-    padding: 0 5%;
+    padding: 5% 5%;
+    font-size: 1.6rem;
 }
 
 #aboutDetails p{
-    margin-top: 10px;
+    margin-top: 2%;
 }
 
 h2{
-    font-size: 30px;
+    font-size: 3rem;
 }
 
 button{
@@ -96,7 +104,7 @@ button{
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1.6rem;
     margin: 10px 0;
     border-radius: 8px;
     width: 150px;
@@ -130,8 +138,8 @@ h3{
 }
 
 .project {
-    width: 20%;
-    height: 60%;
+    width: 350px;
+    height: 350px;
     margin-top: 2%;
     padding: 2%;
     
@@ -139,15 +147,28 @@ h3{
 
 .project p{
     text-align: center;
+    font-size: 2rem;
 }
 .projectPic{
     
     width: 100%;
-    height: 25vmin;
+    height: 40vmin;
     object-fit: cover;
     border: 1px solid black;
 }
 a{
     text-decoration: none;
     color: inherit;
+}
+
+/* Media queries */
+
+/* Tablet media query */
+@media(max-width:800px){
+
+}
+
+/* Mobile media query */
+@media(max-width:500px){
+
 }
