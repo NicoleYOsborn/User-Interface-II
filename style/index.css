@@ -28,7 +28,8 @@ h1{
 
 
 *{
-    border: 1px solid grey;
+    /* border: 1px solid white; */
+    /* border: 1px solid grey; */
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
     /* box-sizing: border-box; */
@@ -52,6 +53,11 @@ li{
     background: white;
     border: 1px solid #C63995;
     padding: 15px 20px;
+}
+
+li:hover{
+    background: #C63995;
+    color: white;
 }
 
 #main{
@@ -96,6 +102,12 @@ button{
     width: 150px;
 }
 
+button:hover{
+    background-color: white;
+    border: 1px solid #C63995;
+    color: #C63995;
+}
+
 footer{
     background: #ACDAE8;
     padding: 2%;
@@ -117,8 +129,9 @@ h3{
 
 .project {
     width: 20%;
-    height: 20%;
+    height: 60%;
     margin-top: 2%;
+    padding: 2%;
     
 }
 
@@ -130,4 +143,5 @@ h3{
     width: 100%;
     height: 25vmin;
     object-fit: cover;
+    border: 1px solid black;
 }
